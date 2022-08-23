@@ -1,5 +1,5 @@
 # proyectoG09
 
-esta es una prueba 
-y esta es otra prueba 
+Esta es una prueba desde la rama de prueba
+
 
