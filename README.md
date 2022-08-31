@@ -9,4 +9,3 @@ Esta aplicacion permite registrar, consultar y editar los productos de diferente
 - Camilo Andres Castellar Mercado
 - Angie Nicolle Obando Arenas
 
-//prueba remota
