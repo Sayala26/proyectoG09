@@ -1,14 +1,19 @@
 <template>
-  <HelloWorld />
+  <div class = "app">
+    <HeaderApp />
+    <LogIn />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderApp from './components/Header.vue'
+import LogIn from './components/LogIn.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderApp, 
+    LogIn
   }
 }
 </script>
