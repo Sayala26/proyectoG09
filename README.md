@@ -1,12 +1,24 @@
-# proyectoG09 - SISTEMA DE INVENTARIO PARA ASADERO
+# proyectog09
 
-Esta aplicacion permite registrar, consultar y editar los productos de diferentes tipos en el inventario.
+## Project setup
+```
+npm install
+```
 
-# Integrantes:
-- Yumey Alejandra Orozco Cardona
-- Sofía Ayala Peña
-- Brandon Parra
-- Camilo Andres Castellar Mercado
-- Angie Nicolle Obando Arenas
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-// prueba 
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
