@@ -8,5 +8,3 @@ Esta aplicacion permite registrar, consultar y editar los productos de diferente
 - Brandon Parra
 - Camilo Andres Castellar Mercado
 - Angie Nicolle Obando Arenas
-
-// prueba 
