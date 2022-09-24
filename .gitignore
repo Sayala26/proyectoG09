@@ -1,4 +1,4 @@
 *.sqlite3
 /env
 .DS_Store
-C:\Users\angie\Dropbox\My PC (LAPTOP-90P80RT2)\Desktop\codigo\proyectoG09\env
+__pycache__/
