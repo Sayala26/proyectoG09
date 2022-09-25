@@ -1,15 +1,15 @@
 
 #from rest_framework.response import Response
-
-from authApp import views
-from authApp.serializers.alimentoSerializer import AlimentoSerializer
+from rest_framework import status, views
 from rest_framework.response import Response
 
+from authApp.serializers.alimentoSerializer import AlimentoSerializer
 
-"""class alimentoCreateView(views):
-    def create_alimento(self, request, *args, **kwargs):
+class AlimentoCreateView(views.APIView):
+     def post(self, request, *args, **kwargs):
         serializer = AlimentoSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
 
-        return Response('Modulo de registro de alimentos', serializer.validated_data)"""
+        return Response(status=status.HTTP_201_CREATED)
+
