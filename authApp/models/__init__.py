@@ -1,3 +1,4 @@
+from .cuenta import Cuenta
 from .usuario import Usuario
 from .alimento import Alimento
 from .cocina import Cocina
