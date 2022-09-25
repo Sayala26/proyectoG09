@@ -1,2 +1,4 @@
 from .alimentoSerializer import AlimentoSerializer
-from .cocinaSerializer import CocinaSerializer 
+from .cocinaSerializer import CocinaSerializer
+from .usuarioSerializer import UsuarioSerializer
+from .cuentaSerializer import CuentaSerializer
