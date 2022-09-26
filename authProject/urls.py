@@ -13,6 +13,7 @@ urlpatterns = [
     path('refresh/', TokenRefreshView.as_view()), # token refresh
     path('user/', views.UsuarioCreateView.as_view()), # crear usuario
 
-    path('api/', include(router.urls)) #CRUD Alimentos
+    # URL ANGIE
+    path('alimentos/', include(router.urls)) #CRUD Alimentos
 
 ]
