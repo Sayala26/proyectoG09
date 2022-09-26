@@ -16,11 +16,12 @@ urlpatterns = [
     path('user/', views.UsuarioCreateView.as_view()), # crear usuario
 
     # URL ANGIE
-    #path('alimentos/', include(router.urls)), #CRUD Alimentos
-    path('Alimento/<int:pk>', AlimentoViewSet.as_view({'get':'retrieve', 'patch':'partial_update', 'put': 'update'})),
-    path('Alimento/list', AlimentoViewSet.as_view({'get':'list'})),
-    path('Alimento/create', AlimentoViewSet.as_view({'post':'create'})),
-    path('Alimento/delete/<int:pk>', AlimentoViewSet.as_view({'delete':'destroy'})),
+    path('alimentos/', include(router.urls)), #CRUD Alimentos
+    #path('Alimento/<int:pk>', AlimentoViewSet.as_view({'get':'retrieve', 'patch':'partial_update', 'put': 'update'})),
+    #path('Alimento/list', AlimentoViewSet.as_view({'get':'list'})),
+    #path('Alimento/create', AlimentoViewSet.as_view({'post':'create'})),
+    #path('Alimento/delete/<int:pk>', AlimentoViewSet.as_view({'delete':'destroy'})),
+
 
     #URLS ALEJANDRA
     path('cocina/<int:pk>', CocinaViewSet.as_view({'get':'retrieve', 'patch':'partial_update', 'put': 'update'})),
