@@ -4,4 +4,4 @@ from rest_framework import serializers
 class CocinaSerializer(serializers.ModelSerializer):
  class Meta:
     model = Cocina
-    fields = ['recetas', 'platos ', 'vasos ','cucharas','tenedores']
+    fields = ['nombre', 'cantidad', 'precio','proveedor']
