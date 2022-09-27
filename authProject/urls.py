@@ -4,6 +4,7 @@ from rest_framework_simplejwt.views import (TokenObtainPairView, TokenRefreshVie
 from authApp import views
 from authApp.views.cocina_view.cocinaViewSet import CocinaViewSet
 from authApp.views.alimento_view.alimentoViewSet import AlimentoViewSet
+from authApp.views.proveedor_view.proveedorViewSet import ProveedorViewSet
 from .router import router
 
 
@@ -28,5 +29,12 @@ urlpatterns = [
     path('cocina/list', CocinaViewSet.as_view({'get':'list'})),
     path('cocina/create', CocinaViewSet.as_view({'post':'create'})),
     path('cocina/delete/<int:pk>', CocinaViewSet.as_view({'delete':'destroy'})),
+
+    #URLS BRANDON
+    path('proveedor/<int:pk>', ProveedorViewSet.as_view({'get':'retrieve', 'patch':'partial_update', 'put': 'update'})),
+    path('proveedor/list', ProveedorViewSet.as_view({'get':'list'})),
+    path('proveedor/create', ProveedorViewSet.as_view({'post':'create'})),
+    path('proveedor/delete/<int:pk>', ProveedorViewSet.as_view({'delete':'destroy'})),
+
 
 ]
