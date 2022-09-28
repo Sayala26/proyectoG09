@@ -5,6 +5,7 @@ from authApp import views
 from authApp.views.cocina_view.cocinaViewSet import CocinaViewSet
 from authApp.views.alimento_view.alimentoViewSet import AlimentoViewSet
 from .router import router
+from authApp.views.limpieza_view.limpiezaViewSet import LimpiezaViewSet
 
 
 urlpatterns = [
@@ -28,5 +29,12 @@ urlpatterns = [
     path('cocina/list', CocinaViewSet.as_view({'get':'list'})),
     path('cocina/create', CocinaViewSet.as_view({'post':'create'})),
     path('cocina/delete/<int:pk>', CocinaViewSet.as_view({'delete':'destroy'})),
+
+    #URLS SOFIA
+    path('limpieza/<int:pk>', LimpiezaViewSet.as_view({'get':'retrieve', 'patch':'partial_update', 'put': 'update'})),
+    path('limpieza/list', LimpiezaViewSet.as_view({'get':'list'})),
+    path('limpieza/create', LimpiezaViewSet.as_view({'post':'create'})),
+    path('limpieza/delete', LimpiezaViewSet.as_view({'delete':'destroy'})),
+
 
 ]
