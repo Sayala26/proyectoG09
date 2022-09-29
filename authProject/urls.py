@@ -31,19 +31,16 @@ urlpatterns = [
     path('cocina/create', CocinaViewSet.as_view({'post':'create'})),
     path('cocina/delete/<int:pk>', CocinaViewSet.as_view({'delete':'destroy'})),
 
-<<<<<<< HEAD
     #URLS BRANDON
     path('proveedor/<int:pk>', ProveedorViewSet.as_view({'get':'retrieve', 'patch':'partial_update', 'put': 'update'})),
     path('proveedor/list', ProveedorViewSet.as_view({'get':'list'})),
     path('proveedor/create', ProveedorViewSet.as_view({'post':'create'})),
     path('proveedor/delete/<int:pk>', ProveedorViewSet.as_view({'delete':'destroy'})),
-=======
     #URLS SOFIA
     path('limpieza/<int:pk>', LimpiezaViewSet.as_view({'get':'retrieve', 'patch':'partial_update', 'put': 'update'})),
     path('limpieza/list', LimpiezaViewSet.as_view({'get':'list'})),
     path('limpieza/create', LimpiezaViewSet.as_view({'post':'create'})),
     path('limpieza/delete', LimpiezaViewSet.as_view({'delete':'destroy'})),
->>>>>>> develop
 
 
 ]
