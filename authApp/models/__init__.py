@@ -1,6 +1,6 @@
-from .cuenta import Cuenta
-from .usuario import Usuario
-from .alimento import Alimento
-from .cocina import Cocina
-from .limpieza import Limpieza
-from .proveedor import Proveedor
+# import models from authApp
+from .usuarioModel import Usuario
+from .productoModel import Producto
+from .cocinaModel import Cocina
+from .limpiezaModel import Limpieza
+from .proveedorModel import Proveedor
