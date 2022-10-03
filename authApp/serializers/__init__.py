@@ -1,0 +1,6 @@
+#import serializers
+from .UsuarioSerializer import UsuarioSerializer
+from .ProductoSerializer import ProductoSerializer
+from .CocinaSerializer import CocinaSerializer
+from .LimpiezaSerializer import LimpiezaSerializer
+from .ProveedorSerializer import ProveedorSerializer
