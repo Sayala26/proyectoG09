@@ -1,6 +1,6 @@
 #import serializers
-from .UsuarioSerializer import UsuarioSerializer
+from .usuarioSerializer import UsuarioSerializer
 from .ProductoSerializer import ProductoSerializer
-from .CocinaSerializer import CocinaSerializer
-from .LimpiezaSerializer import LimpiezaSerializer
-from .ProveedorSerializer import ProveedorSerializer
+from .cocinaSerializer import CocinaSerializer
+from .limpiezaSerializer import LimpiezaSerializer
+from .proveedorSerializer import ProveedorSerializer

@@ -16,8 +16,12 @@ from authApp.serializers import ProveedorSerializer
 
 # Create your views here.
 @csrf_exempt
-def usuario_list(request):
-    if request.method == 'POST':
+def usuario_list(request,email=''):
+    if request.method == 'GET':
+        usuario = Usuario.objects.get(usuario_correo=email)
+        serializer = UsuarioSerializer(usuario, many=True)
+        return JsonResponse("si se encuentra", safe=False)
+    elif request.method == 'POST':
         usuarios_data = JSONParser().parse(request)
         serializer = UsuarioSerializer(data=usuarios_data)
         if serializer.is_valid():
